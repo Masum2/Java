@@ -1,0 +1,27 @@
+
+package vowelcon;
+
+import java.util.Scanner;
+
+
+public class FibonaciNum {
+    public static void main(String[] args) {
+        
+         int n,fibo,first=0,second=1;
+        Scanner input = new Scanner(System.in);
+        
+        System.out.println("Enter number");
+       
+        n=input.nextInt();
+        
+        System.out.print(first+" "+second);
+        
+        for(int i=3; i<=n;i++)
+        {
+            fibo=first+second;
+            System.out.print(" "+fibo);
+            first=second;
+            second=fibo;
+        }
+    }
+}
